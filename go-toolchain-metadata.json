@@ -1,0 +1,44 @@
+{
+  "packages": [
+    {
+      "type": "apt",
+      "name": "ca-certificates"
+    },
+    {
+      "type": "apt",
+      "name": "curl"
+    },
+    {
+      "type": "apt",
+      "name": "git"
+    },
+    {
+      "type": "apt",
+      "name": "make"
+    },
+    {
+      "type": "apt",
+      "name": "build-essential"
+    }
+  ],
+  "components": {
+    "go-1.19.7": {
+      "group": "compilers",
+      "type": "download-only",
+      "name": "go",
+      "version": "1.19.7",
+      "add-to-path": true,
+      "expected-hash": "7a75720c9b066ae1750f6bcc7052aba70fa3813f4223199ee2a2315fd3eb533d",
+      "url": "https://go.dev/dl/go1.19.7.linux-amd64.tar.gz"
+    },
+    "golangci-lint-1.51.2": {
+      "group": "linters",
+      "type": "download-only",
+      "name": "golangci-lint",
+      "version": "1.51.2",
+      "add-to-path": true,
+      "executables-dir": ".",
+      "url": "https://github.com/golangci/golangci-lint/releases/download/v1.51.2/golangci-lint-1.51.2-linux-amd64.tar.gz"
+    }
+  }
+}
